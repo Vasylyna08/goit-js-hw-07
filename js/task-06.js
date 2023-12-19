@@ -10,7 +10,7 @@ const buttonDestroy = document.querySelector('button[data-destroy]');
 const boxes = document.querySelector('#boxes');
 
 buttonCreate.addEventListener('click', () => {
-  const amount = Number(input.value);
+  const amount = parseInt(input.value);
   if (amount >= input.min && amount <= input.max) {
     createBoxes(amount);
   }
